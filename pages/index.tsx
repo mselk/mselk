@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import melissa from '../public/melissa.jpg';
 
 export default function Home() {
 	return (
@@ -13,7 +14,7 @@ export default function Home() {
 			<main>
 				<h1 className={styles.headline}>Welcome to my Blog</h1>
 				<p> This was my adventure in the Caribbean.</p>
-				<Image alt="woman in a beach" src="/melissa.jpg" width="1086" height="1085" />
+				<Image alt="woman in a beach" src={melissa} width="1086" height="1085" />
 			</main>
 		</div>
 	);
