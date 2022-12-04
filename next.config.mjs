@@ -3,10 +3,9 @@
  */
 const nextConfig = {
 	images: {
-		loader: 'akamai',
-		path: '/',
+		unoptimized: true,
 	},
-	assetPrefix: './',
+	assetPrefix: '/mselk/',
 };
 
 export default nextConfig;
