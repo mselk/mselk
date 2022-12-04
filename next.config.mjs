@@ -5,7 +5,7 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
-	assetPrefix: '/mselk/',
+	assetPrefix: '/mselk',
 };
 
 export default nextConfig;
