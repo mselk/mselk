@@ -4,9 +4,8 @@
 const nextConfig = {
 	images: {
 		loader: 'akamai',
-		path: '/mselk',
+		path: '',
 	},
-	assetPrefix: './',
 	basePath: '/mselk',
 };
 
