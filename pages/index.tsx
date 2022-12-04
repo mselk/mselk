@@ -13,7 +13,7 @@ export default function Home() {
 			<main>
 				<h1 className={styles.headline}>Welcome to my Blog</h1>
 				<p> This was my adventure in the Caribbean</p>
-				<img src="/melissa.jpg" />
+				<Image alt="woman in a beach" src="/melissa.jpg" width="1086" height="1085" />
 			</main>
 		</div>
 	);
