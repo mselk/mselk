@@ -2,14 +2,7 @@
 	text-align: center;
 }
 
-.container p {
-	text-align: center;
-	font-size: larger;
-}
-
-.container img {
-	display: block;
-	margin: 0 auto;
-	max-width: 300px;
-	height: auto;
+.tiles {
+	display: flex;
+	justify-content: center;
 }

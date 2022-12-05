@@ -19,8 +19,13 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
-    background: black;
+    background: rgb(26, 25, 25);
   }
+}
+
+body {
+  min-height: 2000px;
 }
