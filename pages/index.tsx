@@ -3,6 +3,7 @@ import Image from '../components/image/image'
 import styles from '../styles/Home.module.css';
 import melissa from '../public/melissa.jpg';
 import Tile from '../components/tile/tile';
+import tiles from '../data/tiles';
 
 export default function Home() {
 	return (
@@ -17,9 +18,7 @@ export default function Home() {
 				<p> This was my adventure in the Caribbean.</p>
 				<Image alt="woman on a beach" src={melissa} width={1086} height={1085} />
 				<div className={styles.tiles}>
-					<Tile image={melissa} headline="Follow me for more" details='Adventures' link={"Test"} />
-					<Tile image={melissa} headline="Follow me for more" details='Adventures' link={"Test"} />
-					<Tile image={melissa} headline="Follow me for more" details='Adventures' link={"Test"} />
+					{tiles.map(tile => <Tile image={tile.image} headline={tile.headline} details={tile.details} link={tile.link} />)}
 				</div>
 			</main>
 		</div>
