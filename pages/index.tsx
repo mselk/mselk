@@ -18,7 +18,7 @@ export default function Home() {
 				<p> This was my adventure in the Caribbean.</p>
 				<Image alt="woman on a beach" src={melissa} width={1086} height={1085} />
 				<div className={styles.tiles}>
-					{tiles.map((tile, index) => <Tile key={index} image={tile.image} headline={tile.headline} details={tile.details} link={tile.link} />)}
+					{tiles.map((tile, index) => <Tile key={index} image={tile.image} headline={tile.headline} details={tile.details} link={"posts/" + tile.link} />)}
 				</div>
 			</main>
 		</div>
