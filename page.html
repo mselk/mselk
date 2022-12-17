@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>This is a title</title>
+    <style>
+        body {
+            background-color: wheat;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .circle {
+            background-color: azure;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: dotted 5px green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            animation: circle 3s infinite;
+
+        }
+
+        @keyframes circle {
+            0% {
+                top: 0;
+
+            }
+
+            25% {
+                left: 100%;
+                top: 50%;
+                opacity: 0.3;
+                transform: translateY(-50%) translateX(-100%);
+            }
+
+            75% {
+                top: 100%;
+                transform: translateY(-100%);
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+
+            }
+
+        }
+
+        .box {
+            position: absolute;
+            top: 25%;
+            right: 25%;
+            left: 25%;
+            bottom: 25;
+            border: dashed 3px purple;
+        }
+    </style>
+</head>
+
+<body>
+    This is the body
+    <div class="box">
+        <div class="circle">I'm a circle and a square</div>
+    </div>
+</body>
+
+</html>
