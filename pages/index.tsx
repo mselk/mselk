@@ -6,7 +6,6 @@ import Tile from '../components/tile/tile';
 import tiles from '../data/tiles';
 import { useEffect, useState } from 'react';
 import PayPal from '../components/paypal/paypal';
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 export default function Home() {
 	const [city, setCity] = useState("");
@@ -25,9 +24,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<PayPalScriptProvider options={{ "client-id": "test" }}>
-					<PayPalButtons style={{ layout: "horizontal" }} />
-				</PayPalScriptProvider>
+				<PayPal />
 				Thank you for visiting. Your city: {city}
 				<h1 className={styles.headline}>Welcome to my Blog</h1>
 				<p> This was my adventure in the Caribbean.</p>
